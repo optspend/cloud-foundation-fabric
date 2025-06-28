@@ -77,19 +77,19 @@ variable "deletion_protection" {
 variable "enable_services" {
   description = "Flag to enable or disable services in the Data Platform."
   type = object({
-    composer                = optional(bool, true)
-    dataproc_history_server = optional(bool, true)
+    composer                = optional(bool, false)
+    dataproc_history_server = optional(bool, false)
   })
   default = {}
 }
 
 variable "groups" {
-  description = "User groups."
-  type        = map(string)
+  description = "IAM members"
+  type = map(string)
   default = {
-    data-analysts  = "gcp-data-analysts"
-    data-engineers = "gcp-data-engineers"
-    data-security  = "gcp-data-security"
+    data-analysts  = "user:sivatradepro@gmail.com"
+    data-engineers = "user:optspend@gmail.com"
+    data-security  = "user:sivacit@gmail.com"
   }
 }
 
@@ -182,3 +182,4 @@ variable "service_encryption_keys" {
   nullable = false
   default  = {}
 }
+

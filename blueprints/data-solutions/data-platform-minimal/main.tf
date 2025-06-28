@@ -14,12 +14,21 @@
 
 # tfdoc:file:description Core locals.
 
+#locals {
+#  groups = {
+#    for k, v in var.groups : k => "${v}@${var.organization_domain}"
+#  }
+#  groups_iam = {
+#    for k, v in local.groups : k => "group:${v}"
+#  }
+#  project_suffix = var.project_suffix == null ? "" : "-${var.project_suffix}"
+#  use_shared_vpc = var.network_config.host_project != null
+#}
+
 locals {
-  groups = {
-    for k, v in var.groups : k => "${v}@${var.organization_domain}"
-  }
+  groups = var.groups  # already passed as full IAM principal like "user:optspend@gmail.com"
   groups_iam = {
-    for k, v in local.groups : k => "group:${v}"
+    for k, v in local.groups : k => v  # don't prepend "group:"
   }
   project_suffix = var.project_suffix == null ? "" : "-${var.project_suffix}"
   use_shared_vpc = var.network_config.host_project != null
