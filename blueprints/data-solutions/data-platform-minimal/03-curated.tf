@@ -138,7 +138,7 @@ module "cur-cs-0" {
   prefix         = var.prefix
   name           = "cur-cs-0"
   location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  storage_class  = "STANDARD"
   encryption_key = var.service_encryption_keys.storage
   force_destroy  = !var.deletion_protection
 }

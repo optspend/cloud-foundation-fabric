@@ -96,7 +96,7 @@ variable "groups" {
 variable "location" {
   description = "Location used for multi-regional resources."
   type        = string
-  default     = "eu"
+  default     = "europe-central2"
 }
 
 variable "network_config" {

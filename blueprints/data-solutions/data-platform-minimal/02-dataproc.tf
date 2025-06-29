@@ -49,7 +49,7 @@ module "processing-staging-0" {
   prefix         = var.prefix
   name           = "prc-stg-0"
   location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  storage_class  = "STANDARD"
   encryption_key = var.service_encryption_keys.storage
   force_destroy  = !var.deletion_protection
 }
@@ -60,7 +60,7 @@ module "processing-temp-0" {
   prefix         = var.prefix
   name           = "prc-tmp-0"
   location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  storage_class  = "STANDARD"
   encryption_key = var.service_encryption_keys.storage
   force_destroy  = !var.deletion_protection
 }
@@ -71,7 +71,7 @@ module "processing-log-0" {
   prefix         = var.prefix
   name           = "prc-log-0"
   location       = var.location
-  storage_class  = "MULTI_REGIONAL"
+  storage_class  = "STANDARD"
   encryption_key = var.service_encryption_keys.storage
   force_destroy  = !var.deletion_protection
 }

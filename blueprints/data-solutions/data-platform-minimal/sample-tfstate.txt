@@ -1167,7 +1167,7 @@
                 "retention_duration_seconds": 604800
               }
             ],
-            "storage_class": "MULTI_REGIONAL",
+            "storage_class": "STANDARD",
             "terraform_labels": {
               "goog-terraform-provisioned": "true"
             },
@@ -2400,7 +2400,7 @@
                 "retention_duration_seconds": 604800
               }
             ],
-            "storage_class": "MULTI_REGIONAL",
+            "storage_class": "STANDARD",
             "terraform_labels": {
               "goog-terraform-provisioned": "true"
             },
@@ -3235,7 +3235,7 @@
                 "retention_duration_seconds": 604800
               }
             ],
-            "storage_class": "MULTI_REGIONAL",
+            "storage_class": "STANDARD",
             "terraform_labels": {
               "goog-terraform-provisioned": "true"
             },
@@ -3317,7 +3317,7 @@
                 "retention_duration_seconds": 604800
               }
             ],
-            "storage_class": "MULTI_REGIONAL",
+            "storage_class": "STANDARD",
             "terraform_labels": {
               "goog-terraform-provisioned": "true"
             },
@@ -5259,7 +5259,7 @@
                 "retention_duration_seconds": 604800
               }
             ],
-            "storage_class": "MULTI_REGIONAL",
+            "storage_class": "STANDARD",
             "terraform_labels": {
               "goog-terraform-provisioned": "true"
             },
@@ -5341,7 +5341,7 @@
                 "retention_duration_seconds": 604800
               }
             ],
-            "storage_class": "MULTI_REGIONAL",
+            "storage_class": "STANDARD",
             "terraform_labels": {
               "goog-terraform-provisioned": "true"
             },
