@@ -1,0 +1,12 @@
+name: projects/keen-button-463715-v2/locations/europe-central2/lakes/healthcare-lake/zones/landing-zone/assets/allergies_asset
+resourceSpec:
+  type: STORAGE
+  name: projects/keen-button-463715-v2/locations/europe-central2/buckets/demo-lnd-cs-0/objects/synthea/allergies.csv
+assetStatus: ACTIVE
+discoverySpec:
+  enabled: true
+  schedule: "0 * * * *"
+  csvOptions:
+    headerRows: 1
+    delimiter: ","
+
